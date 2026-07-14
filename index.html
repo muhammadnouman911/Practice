@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+    LUXVORA — Premium Affiliate Landing Page
+    index.html
+    
+    HOW TO EDIT:
+    - Replace #AFFILIATE_LINK_1 through #AFFILIATE_LINK_8 with your actual affiliate URLs
+    - Replace product prices (e.g. "$49.99") with real prices
+    - Replace product images: update the src="" in each .product-img-wrap img
+    - Update contact email in the contact section
+    ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LUXVORA — Discover premium tech gadgets that upgrade your lifestyle. Curated luxury gadgets at unbeatable prices." />
+  <meta name="keywords" content="luxury gadgets, premium tech, mini projector, wireless earbuds, MagSafe charger, RGB lights" />
+  <meta property="og:title" content="LUXVORA — Premium Gadgets That Upgrade Your Lifestyle" />
+  <meta property="og:description" content="Shop the most premium, high-end gadgets curated for those who demand the best." />
+  <meta property="og:type" content="website" />
+  <title>LUXVORA — Premium Gadgets That Upgrade Your Lifestyle</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Preconnect for Google Fonts performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body>
+
+  <!-- ============================================================
+    NAVBAR
+    ============================================================ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+
+        <!-- Logo -->
+        <a href="#hero" class="nav-logo" aria-label="LUXVORA Home">
+          <div class="logo-icon" aria-hidden="true">L</div>
+          <span class="logo-text">LUXVORA</span>
+        </a>
+
+        <!-- Desktop navigation links -->
+        <ul class="nav-links" role="list">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA button -->
+        <a href="#products" class="btn-gold nav-cta" id="nav-shop-btn">
+          <span>Shop Now</span>
+        </a>
+
+        <!-- Mobile hamburger button -->
+        <button
+          class="nav-hamburger"
+          id="nav-hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </nav><!-- /.nav-inner -->
+    </div><!-- /.container -->
+
+    <!-- Mobile dropdown menu -->
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile navigation">
+      <a href="#products">Products</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#products">🛍 Shop Now</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+      SECTION 1: HERO
+      ============================================================ -->
+    <section id="hero" aria-label="Hero section">
+      <!-- Background image -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlay -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <!-- Gold radial glow -->
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Pre-title badge -->
+          <div class="hero-badge">
+            <span class="dot" aria-hidden="true"></span>
+            Premium Curated Collection
+          </div>
+
+          <!-- Main headline -->
+          <h1 class="hero-title">
+            Discover Premium Gadgets
+            <span class="highlight">That Upgrade Your Lifestyle</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-subtitle">
+            Hand-picked luxury tech gadgets for people who demand the extraordinary.
+            Elevate every moment with products engineered for the discerning few.
+          </p>
+
+          <!-- CTA buttons -->
+          <div class="hero-actions">
+            <a href="#products" class="btn-gold" id="hero-shop-btn">
+              <span>Shop Now</span>
+              <!-- Arrow icon (pure CSS via Unicode) -->
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="#why" class="btn-ghost" id="hero-learn-btn">Learn More</a>
+          </div>
+
+          <!-- Trust bar: social proof stats -->
+          <div class="hero-trust" aria-label="Trust statistics">
+            <div class="hero-trust-item">
+              <span class="trust-val" data-count="10" data-suffix="K+">10K+</span>
+              <span class="trust-label">Happy Customers</span>
+            </div>
+            <div class="hero-trust-sep" aria-hidden="true"></div>
+            <div class="hero-trust-item">
+              <span class="trust-val" data-count="4.9" data-suffix="★">4.9★</span>
+              <span class="trust-label">Average Rating</span>
+            </div>
+            <div class="hero-trust-sep" aria-hidden="true"></div>
+            <div class="hero-trust-item">
+              <span class="trust-val" data-count="48" data-suffix="h">48h</span>
+              <span class="trust-label">Fast Shipping</span>
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div><!-- /.container -->
+
+      <!-- Scroll down indicator -->
+      <div class="hero-scroll" id="hero-scroll" role="button" tabindex="0" aria-label="Scroll to products">
+        <div class="scroll-mouse" aria-hidden="true"></div>
+        <span>Scroll</span>
+      </div>
+
+    </section><!-- /#hero -->
+
+
+    <!-- ============================================================
+      SECTION 2: FEATURED PRODUCTS
+      ============================================================ -->
+    <section id="products" class="section-pad" aria-label="Featured products">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="label">Curated For You</span>
+          <h2>Featured <span class="gold-text">Products</span></h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="products-grid">
+
+          <!-- ── PRODUCT 1: Mini Projector ──
+               TO EDIT: Replace #AFFILIATE_LINK_1 with your affiliate URL
+                        Replace src with your product image path
+                        Replace price with actual price -->
+          <article class="product-card reveal reveal-delay-1" aria-label="Mini Projector">
+            <div class="product-img-wrap">
+              <!-- Replace src with your product image. Recommended size: 500x500px -->
+              <img
+                src="images/prod_mini_projector.png"
+                alt="Premium Mini Projector"
+                loading="lazy"
+                width="500"
+                height="500"
+              />
+              <span class="product-badge">Best Seller</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Mini Projector</h3>
+              <p class="product-desc">
+                Pocket-sized cinema experience. Full HD display, built-in speaker, wireless casting support.
+              </p>
+              <div class="product-stars" aria-label="Rating: 4.9 out of 5 stars">
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="product-rating-count">(2,341)</span>
+              </div>
+              <div class="product-price">
+                <!-- Replace with actual price -->
+                <span class="price-current">$79.99</span>
+                <span class="price-old">$129.99</span>
+              </div>
+              <!-- AFFILIATE LINK 1 — Replace #AFFILIATE_LINK_1 with your URL -->
+              <a href="#AFFILIATE_LINK_1" class="btn-buy" id="buy-btn-1" target="_blank" rel="noopener noreferrer">
+                Buy Now
+              </a>
+            </div>
+          </article>
+
+
+          <!-- ── PRODUCT 2: Wireless Earbuds ──
+               TO EDIT: Replace #AFFILIATE_LINK_2 with your affiliate URL -->
+          <article class="product-card reveal reveal-delay-2" aria-label="Wireless Earbuds">
+            <div class="product-img-wrap">
+              <img
+                src="images/prod_wireless_earbuds.png"
+                alt="Premium Wireless Earbuds"
+                loading="lazy"
+                width="500"
+                height="500"
+              />
+              <span class="product-badge">Top Rated</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Wireless Earbuds</h3>
+              <p class="product-desc">
+                Active noise cancellation, 36-hour battery life, premium hi-fi sound in a sleek case.
+              </p>
+              <div class="product-stars" aria-label="Rating: 4.8 out of 5 stars">
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="product-rating-count">(5,891)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$49.99</span>
+                <span class="price-old">$89.99</span>
+              </div>
+              <!-- AFFILIATE LINK 2 — Replace #AFFILIATE_LINK_2 with your URL -->
+              <a href="#AFFILIATE_LINK_2" class="btn-buy" id="buy-btn-2" target="_blank" rel="noopener noreferrer">
+                Buy Now
+              </a>
+            </div>
+          </article>
+
+
+          <!-- ── PRODUCT 3: MagSafe 3-in-1 Charger ──
+               TO EDIT: Replace #AFFILIATE_LINK_3 with your affiliate URL -->
+          <article class="product-card reveal reveal-delay-3" aria-label="MagSafe 3-in-1 Charger">
+            <div class="product-img-wrap">
+              <img
+                src="images/prod_magsafe_charger.png"
+                alt="MagSafe 3-in-1 Wireless Charger"
+                loading="lazy"
+                width="500"
+                height="500"
+              />
+              <span class="product-badge">New</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">MagSafe 3-in-1 Charger</h3>
+              <p class="product-desc">
+                Charge your phone, watch, and earbuds simultaneously. Ultra-slim design with fast-charge.
+              </p>
+              <div class="product-stars" aria-label="Rating: 4.7 out of 5 stars">
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="product-rating-count">(1,204)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$59.99</span>
+                <span class="price-old">$99.99</span>
+              </div>
+              <!-- AFFILIATE LINK 3 — Replace #AFFILIATE_LINK_3 with your URL -->
+              <a href="#AFFILIATE_LINK_3" class="btn-buy" id="buy-btn-3" target="_blank" rel="noopener noreferrer">
+                Buy Now
+              </a>
+            </div>
+          </article>
+
+
+          <!-- ── PRODUCT 4: RGB LED Lights ──
+               TO EDIT: Replace #AFFILIATE_LINK_4 with your affiliate URL -->
+          <article class="product-card reveal reveal-delay-4" aria-label="RGB LED Lights">
+            <div class="product-img-wrap">
+              <img
+                src="images/prod_rgb_lights.png"
+                alt="RGB LED Light Strip"
+                loading="lazy"
+                width="500"
+                height="500"
+              />
+              <span class="product-badge">Trending</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">RGB LED Lights</h3>
+              <p class="product-desc">
+                16 million colors, music sync mode, app-controlled. Transform any room into a premium setup.
+              </p>
+              <div class="product-stars" aria-label="Rating: 4.9 out of 5 stars">
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="product-rating-count">(8,723)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$24.99</span>
+                <span class="price-old">$44.99</span>
+              </div>
+              <!-- AFFILIATE LINK 4 — Replace #AFFILIATE_LINK_4 with your URL -->
+              <a href="#AFFILIATE_LINK_4" class="btn-buy" id="buy-btn-4" target="_blank" rel="noopener noreferrer">
+                Buy Now
+              </a>
+            </div>
+          </article>
+
+
+          <!-- ── PRODUCT 5: Car Vacuum Cleaner ──
+               TO EDIT: Replace #AFFILIATE_LINK_5 with your affiliate URL -->
+          <article class="product-card reveal reveal-delay-1" aria-label="Car Vacuum Cleaner">
+            <div class="product-img-wrap">
+              <img
+                src="images/prod_car_vacuum.png"
+                alt="Cordless Car Vacuum Cleaner"
+                loading="lazy"
+                width="500"
+                height="500"
+              />
+              <span class="product-badge">Popular</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Car Vacuum Cleaner</h3>
+              <p class="product-desc">
+                Powerful cordless suction, HEPA filter, slim nozzle for every corner. Car-grade performance.
+              </p>
+              <div class="product-stars" aria-label="Rating: 4.8 out of 5 stars">
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="product-rating-count">(3,112)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$34.99</span>
+                <span class="price-old">$59.99</span>
+              </div>
+              <!-- AFFILIATE LINK 5 — Replace #AFFILIATE_LINK_5 with your URL -->
+              <a href="#AFFILIATE_LINK_5" class="btn-buy" id="buy-btn-5" target="_blank" rel="noopener noreferrer">
+                Buy Now
+              </a>
+            </div>
+          </article>
+
+
+          <!-- ── PRODUCT 6: Portable Blender ──
+               TO EDIT: Replace #AFFILIATE_LINK_6 with your affiliate URL -->
+          <article class="product-card reveal reveal-delay-2" aria-label="Portable Blender">
+            <div class="product-img-wrap">
+              <img
+                src="images/prod_portable_blender.png"
+                alt="Portable USB Rechargeable Blender"
+                loading="lazy"
+                width="500"
+                height="500"
+              />
+              <span class="product-badge">Hot Pick</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Portable Blender</h3>
+              <p class="product-desc">
+                USB-C rechargeable, stainless steel blades, BPA-free. Fresh smoothies anywhere, anytime.
+              </p>
+              <div class="product-stars" aria-label="Rating: 4.7 out of 5 stars">
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="product-rating-count">(4,567)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$29.99</span>
+                <span class="price-old">$54.99</span>
+              </div>
+              <!-- AFFILIATE LINK 6 — Replace #AFFILIATE_LINK_6 with your URL -->
+              <a href="#AFFILIATE_LINK_6" class="btn-buy" id="buy-btn-6" target="_blank" rel="noopener noreferrer">
+                Buy Now
+              </a>
+            </div>
+          </article>
+
+
+          <!-- ── PRODUCT 7: Smart LED Lamp ──
+               TO EDIT: Replace #AFFILIATE_LINK_7 with your affiliate URL -->
+          <article class="product-card reveal reveal-delay-3" aria-label="Smart LED Lamp">
+            <div class="product-img-wrap">
+              <img
+                src="images/prod_smart_lamp.png"
+                alt="Smart LED Desk Lamp"
+                loading="lazy"
+                width="500"
+                height="500"
+              />
+              <span class="product-badge">Smart Home</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Smart LED Lamp</h3>
+              <p class="product-desc">
+                Voice-controlled, adjustable warmth & brightness, USB charging port built into the base.
+              </p>
+              <div class="product-stars" aria-label="Rating: 4.8 out of 5 stars">
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="product-rating-count">(1,889)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$39.99</span>
+                <span class="price-old">$69.99</span>
+              </div>
+              <!-- AFFILIATE LINK 7 — Replace #AFFILIATE_LINK_7 with your URL -->
+              <a href="#AFFILIATE_LINK_7" class="btn-buy" id="buy-btn-7" target="_blank" rel="noopener noreferrer">
+                Buy Now
+              </a>
+            </div>
+          </article>
+
+
+          <!-- ── PRODUCT 8: Phone Tripod ──
+               TO EDIT: Replace #AFFILIATE_LINK_8 with your affiliate URL -->
+          <article class="product-card reveal reveal-delay-4" aria-label="Phone Tripod">
+            <div class="product-img-wrap">
+              <img
+                src="images/prod_phone_tripod.png"
+                alt="Flexible Phone Tripod Stand"
+                loading="lazy"
+                width="500"
+                height="500"
+              />
+              <span class="product-badge">Must-Have</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Phone Tripod</h3>
+              <p class="product-desc">
+                360° flexible legs, Bluetooth remote shutter included. Perfect for content creators on the go.
+              </p>
+              <div class="product-stars" aria-label="Rating: 4.9 out of 5 stars">
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="product-rating-count">(6,440)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$19.99</span>
+                <span class="price-old">$39.99</span>
+              </div>
+              <!-- AFFILIATE LINK 8 — Replace #AFFILIATE_LINK_8 with your URL -->
+              <a href="#AFFILIATE_LINK_8" class="btn-buy" id="buy-btn-8" target="_blank" rel="noopener noreferrer">
+                Buy Now
+              </a>
+            </div>
+          </article>
+
+        </div><!-- /.products-grid -->
+      </div><!-- /.container -->
+    </section><!-- /#products -->
+
+
+    <!-- ============================================================
+      SECTION 3: WHY CHOOSE LUXVORA
+      ============================================================ -->
+    <section id="why" class="section-pad" aria-label="Why choose Luxvora">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="label">Our Promise</span>
+          <h2>Why Choose <span class="gold-text">LUXVORA</span></h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="why-grid">
+
+          <div class="why-card reveal reveal-delay-1">
+            <div class="why-icon" aria-hidden="true">🏆</div>
+            <h3 class="why-title">Premium Quality</h3>
+            <p class="why-desc">
+              Every product is hand-tested and verified against strict luxury standards before it earns the LUXVORA seal of approval.
+            </p>
+          </div>
+
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-icon" aria-hidden="true">⚡</div>
+            <h3 class="why-title">Lightning Fast Delivery</h3>
+            <p class="why-desc">
+              Orders dispatched within 24 hours with real-time tracking. Premium packaging that feels like unboxing a gift.
+            </p>
+          </div>
+
+          <div class="why-card reveal reveal-delay-3">
+            <div class="why-icon" aria-hidden="true">🛡️</div>
+            <h3 class="why-title">Buyer Protection</h3>
+            <p class="why-desc">
+              30-day hassle-free returns on every order. Our dedicated support team is available 7 days a week for you.
+            </p>
+          </div>
+
+          <div class="why-card reveal reveal-delay-1">
+            <div class="why-icon" aria-hidden="true">💎</div>
+            <h3 class="why-title">Exclusive Deals</h3>
+            <p class="why-desc">
+              We negotiate directly with top brands to bring you prices unavailable anywhere else. Luxury, redefined.
+            </p>
+          </div>
+
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-icon" aria-hidden="true">🌍</div>
+            <h3 class="why-title">Worldwide Shipping</h3>
+            <p class="why-desc">
+              We ship to 130+ countries with customs-optimised packaging to ensure your order arrives safely every time.
+            </p>
+          </div>
+
+          <div class="why-card reveal reveal-delay-3">
+            <div class="why-icon" aria-hidden="true">⭐</div>
+            <h3 class="why-title">5-Star Community</h3>
+            <p class="why-desc">
+              Join over 10,000 satisfied customers who trust LUXVORA to bring them the world's finest everyday gadgets.
+            </p>
+          </div>
+
+        </div><!-- /.why-grid -->
+      </div><!-- /.container -->
+    </section><!-- /#why -->
+
+
+    <!-- ============================================================
+      SECTION 4: CUSTOMER REVIEWS
+      ============================================================ -->
+    <section id="reviews" class="section-pad" aria-label="Customer reviews">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="label">Real Customers</span>
+          <h2>What They're <span class="gold-text">Saying</span></h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="reviews-grid">
+
+          <article class="review-card reveal reveal-delay-1">
+            <div class="review-stars" aria-label="5 star rating">
+              <span class="star">★</span><span class="star">★</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <p class="review-text">
+              "The Mini Projector completely transformed my living room. The picture quality is incredible for the price. I've already recommended it to five friends!"
+            </p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">J</div>
+              <div>
+                <div class="review-name">James K.</div>
+                <div class="review-product">Mini Projector</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal reveal-delay-2">
+            <div class="review-stars" aria-label="5 star rating">
+              <span class="star">★</span><span class="star">★</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <p class="review-text">
+              "LUXVORA's Wireless Earbuds are genuinely on par with brands charging 3x the price. The noise cancellation is outstanding. Worth every penny."
+            </p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">S</div>
+              <div>
+                <div class="review-name">Sophia R.</div>
+                <div class="review-product">Wireless Earbuds</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal reveal-delay-3">
+            <div class="review-stars" aria-label="5 star rating">
+              <span class="star">★</span><span class="star">★</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <p class="review-text">
+              "Fast shipping, beautiful packaging, and the MagSafe Charger works perfectly. This site feels genuinely premium compared to others I've shopped at."
+            </p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">M</div>
+              <div>
+                <div class="review-name">Mohammed A.</div>
+                <div class="review-product">MagSafe 3-in-1 Charger</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal reveal-delay-1">
+            <div class="review-stars" aria-label="5 star rating">
+              <span class="star">★</span><span class="star">★</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <p class="review-text">
+              "My desk setup is completely transformed thanks to the RGB lights. The app control is seamless and the colours are vibrant. Huge upgrade!"
+            </p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">L</div>
+              <div>
+                <div class="review-name">Lena T.</div>
+                <div class="review-product">RGB LED Lights</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal reveal-delay-2">
+            <div class="review-stars" aria-label="5 star rating">
+              <span class="star">★</span><span class="star">★</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <p class="review-text">
+              "The Portable Blender is the best thing I've bought this year. It fits in my gym bag and the smoothies are perfectly blended every single time."
+            </p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">D</div>
+              <div>
+                <div class="review-name">David P.</div>
+                <div class="review-product">Portable Blender</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal reveal-delay-3">
+            <div class="review-stars" aria-label="5 star rating">
+              <span class="star">★</span><span class="star">★</span>
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <p class="review-text">
+              "Customer service was impeccable. Had a question at 11PM and got a response within minutes. The Smart Lamp is also incredible — love voice control!"
+            </p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">A</div>
+              <div>
+                <div class="review-name">Aisha N.</div>
+                <div class="review-product">Smart LED Lamp</div>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.reviews-grid -->
+      </div><!-- /.container -->
+    </section><!-- /#reviews -->
+
+
+    <!-- ============================================================
+      SECTION 5: FAQ
+      ============================================================ -->
+    <section id="faq" class="section-pad" aria-label="Frequently asked questions">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="label">Got Questions?</span>
+          <h2>Frequently Asked <span class="gold-text">Questions</span></h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="faq-list" role="list">
+
+          <div class="faq-item reveal" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q-1" aria-controls="faq-a-1">
+              <span class="faq-q-text">How do I place an order?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
+              <div class="faq-answer-inner">
+                Simply click the gold "Buy Now" button on any product you love. You'll be redirected to our trusted partner store where you can complete your purchase securely with multiple payment options including credit card, PayPal, and more.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-1" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q-2" aria-controls="faq-a-2">
+              <span class="faq-q-text">How long does shipping take?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
+              <div class="faq-answer-inner">
+                Standard shipping typically takes 5–10 business days. Express options are available at checkout for delivery within 48–72 hours. We ship internationally to 130+ countries worldwide.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-2" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q-3" aria-controls="faq-a-3">
+              <span class="faq-q-text">What is your return policy?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
+              <div class="faq-answer-inner">
+                We offer a 30-day hassle-free return policy on all products. If you're not completely satisfied, simply contact us and we'll arrange a full refund or exchange — no questions asked. Your satisfaction is our priority.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-3" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q-4" aria-controls="faq-a-4">
+              <span class="faq-q-text">Are the products covered by warranty?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
+              <div class="faq-answer-inner">
+                Yes! All products featured on LUXVORA come with a minimum 12-month manufacturer's warranty. Extended warranty options are also available on select products at checkout.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-1" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q-5" aria-controls="faq-a-5">
+              <span class="faq-q-text">Is my payment information secure?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
+              <div class="faq-answer-inner">
+                Absolutely. All transactions are processed through encrypted, PCI-DSS compliant payment gateways. We never store your card details and all data is protected with 256-bit SSL encryption.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-2" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q-6" aria-controls="faq-a-6">
+              <span class="faq-q-text">Do you offer bundle discounts?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-a-6" role="region" aria-labelledby="faq-q-6">
+              <div class="faq-answer-inner">
+                Yes! When you purchase 2 or more products, you automatically qualify for our exclusive bundle pricing. Discounts are applied automatically at checkout — no coupon codes needed.
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.faq-list -->
+      </div><!-- /.container -->
+    </section><!-- /#faq -->
+
+
+    <!-- ============================================================
+      SECTION 6: CONTACT
+      ============================================================ -->
+    <section id="contact" class="section-pad" aria-label="Contact us">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="label">Get In Touch</span>
+          <h2>We'd Love to <span class="gold-text">Hear From You</span></h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="contact-wrapper">
+
+          <!-- Left: info -->
+          <div class="contact-info reveal">
+            <h3 class="contact-title">Let's Start a Conversation</h3>
+            <p class="contact-desc">
+              Have a question about a product, your order, or a partnership opportunity?
+              Our luxury concierge team is here to help you every step of the way.
+            </p>
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <span class="icon" aria-hidden="true">✉️</span>
+                <!-- Replace with your actual email -->
+                <span>hello@luxvora.com</span>
+              </div>
+              <div class="contact-detail-item">
+                <span class="icon" aria-hidden="true">💬</span>
+                <span>Live chat available Mon–Fri, 9am–9pm</span>
+              </div>
+              <div class="contact-detail-item">
+                <span class="icon" aria-hidden="true">📦</span>
+                <span>Order tracking &amp; returns: support@luxvora.com</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: form -->
+          <div class="reveal reveal-delay-2">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Full Name</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  placeholder="Your name"
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder="your@email.com"
+                  autocomplete="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  placeholder="How can we help you today?"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-gold form-submit" id="contact-submit-btn">
+                <span>Send Message</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </form>
+          </div>
+
+        </div><!-- /.contact-wrapper -->
+      </div><!-- /.container -->
+    </section><!-- /#contact -->
+
+  </main><!-- /main -->
+
+
+  <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <div class="logo-text">LUXVORA</div>
+          <p>
+            Curating the world's finest premium gadgets for those who refuse to settle.
+            Luxury, performance, and style — delivered to your door.
+          </p>
+        </div>
+
+        <!-- Quick links column -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#products">Featured Products</a></li>
+            <li><a href="#why">Why Luxvora</a></li>
+            <li><a href="#reviews">Customer Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal column -->
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <!-- Replace # with actual policy page URLs when ready -->
+            <li><a href="#privacy-policy" id="footer-privacy-link">Privacy Policy</a></li>
+            <li><a href="#terms-of-service" id="footer-terms-link">Terms of Service</a></li>
+            <li><a href="#affiliate-disclosure" id="footer-affiliate-link">Affiliate Disclosure</a></li>
+            <li><a href="#cookie-policy" id="footer-cookie-link">Cookie Policy</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /.footer-top -->
+
+      <!-- Footer bottom bar -->
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="footer-year">2024</span> <span>LUXVORA</span>. All rights reserved.
+          <!-- Affiliate disclosure note -->
+          This site contains affiliate links. We may earn a commission at no extra cost to you.
+        </p>
+        <div class="footer-legal" aria-label="Legal links">
+          <a href="#privacy-policy">Privacy Policy</a>
+          <a href="#terms-of-service">Terms</a>
+          <a href="#affiliate-disclosure">Disclosure</a>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+  </footer><!-- /#footer -->
+
+
+  <!-- ============================================================
+    BACK TO TOP BUTTON
+    ============================================================ -->
+  <button id="back-to-top" aria-label="Scroll back to top" title="Back to top">
+    ↑
+  </button>
+
+
+  <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+  <script src="script.js"></script>
+
+  <!-- Inline: set current year in footer copyright -->
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
